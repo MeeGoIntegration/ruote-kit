@@ -1,3 +1,9 @@
+ruby-ruote-kit (2.2.1.0-1) experimental; urgency=low
+
+  * Rebase on latest upstream
+
+ -- Islam Amer <islam.amer@nokia.com>  Sun, 27 Nov 2011 22:43:10 +0200
+
 ruby-ruote-kit (2.2.0.3-2) UNRELEASED; urgency=low
 
   * Loosen runtime deps in the gemsepc to allow testing

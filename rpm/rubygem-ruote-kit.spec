@@ -17,9 +17,10 @@
 
 # norootforbuild
 Name:           rubygem-ruote-kit
-Version:        2.2.1
+Version:        2.2.1.0
 Release:        1
 %define mod_name ruote-kit
+%define gem_version 2.2.1
 #
 Group:          Development/Languages/Ruby
 License:        MIT
@@ -39,7 +40,7 @@ BuildRequires:  rubygem-ruote >= 2.2.0
 Requires:       rubygem-ruote >= 2.2.0
 #
 Url:            http://github.com/tosch/ruote-kit
-Source:         %{mod_name}-%{version}.gem
+Source:         %{mod_name}-%{gem_version}.gem
 #
 Summary:        ruote workflow engine, wrapped in a loving rack embrace
 %description
@@ -71,17 +72,17 @@ Test::Unit or RSpec files, useful for developers.
 
 %files
 %defattr(644,root,root,755)
-%{_libdir}/ruby/gems/%{rb_ver}/cache/%{mod_name}-%{version}.gem
-%{_libdir}/ruby/gems/%{rb_ver}/gems/%{mod_name}-%{version}/
-%exclude %{_libdir}/ruby/gems/%{rb_ver}/gems/%{mod_name}-%{version}/spec
-%{_libdir}/ruby/gems/%{rb_ver}/specifications/%{mod_name}-%{version}.gemspec
+%{_libdir}/ruby/gems/%{rb_ver}/cache/%{mod_name}-%{gem_version}.gem
+%{_libdir}/ruby/gems/%{rb_ver}/gems/%{mod_name}-%{gem_version}/
+%exclude %{_libdir}/ruby/gems/%{rb_ver}/gems/%{mod_name}-%{gem_version}/spec
+%{_libdir}/ruby/gems/%{rb_ver}/specifications/%{mod_name}-%{gem_version}.gemspec
 
 %files doc
 %defattr(644,root,root,755)
-%doc %{_libdir}/ruby/gems/%{rb_ver}/doc/%{mod_name}-%{version}/
+%doc %{_libdir}/ruby/gems/%{rb_ver}/doc/%{mod_name}-%{gem_version}/
 
 %files testsuite
 %defattr(644,root,root,755)
-%{_libdir}/ruby/gems/%{rb_ver}/gems/%{mod_name}-%{version}/spec
+%{_libdir}/ruby/gems/%{rb_ver}/gems/%{mod_name}-%{gem_version}/spec
 
 %changelog

@@ -1,0 +1,15 @@
+--- a/ruote-kit.gemspec	2011-12-08 16:19:19.810683009 +0200
++++ b/ruote-kit.gemspec	2011-12-08 16:19:23.554709614 +0200
+@@ -24,9 +24,9 @@
+     'lib/ruote-kit/public/**/*', 'lib/ruote-kit/views/**/*'
+   ] - [ 'rails-template.rb' ]
+ 
+-  s.add_runtime_dependency 'sinatra', '~> 1.2.0'
+-  s.add_runtime_dependency 'sinatra-respond_to', '~> 0.7.0'
+-  s.add_runtime_dependency 'haml', '3.1.2'
++  s.add_runtime_dependency 'sinatra', '>= 1.2.0'
++  s.add_runtime_dependency 'sinatra-respond_to', '>= 0.7.0'
++  s.add_runtime_dependency 'haml', '>= 3.1.2'
+ 
+   s.add_runtime_dependency 'rufus-json', '>= 0.2.5'
+   #s.add_runtime_dependency('ruote', s.version) unless defined?(Bundler)
